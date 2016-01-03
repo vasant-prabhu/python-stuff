@@ -1,0 +1,16 @@
+catNames=[]
+while True:
+    print('Please enter cat names',str(len(catNames)+1)+'or leave blank')
+    name=input()
+    if name=='':
+        break
+    catNames=catNames+[name]
+print('The cat names are:')
+for name in catNames:
+    print('  ' + name)
+
+supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
+for i in supplies:
+    print('Index ' + str(i) + ' in supplies is: ' + i)
+
+
