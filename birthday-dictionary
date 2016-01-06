@@ -1,0 +1,16 @@
+#dictionary
+#birthday
+birthday={'preeti':'19Nov','vasu':'21Dec','hita':'2Dec'}
+while True:
+    print('Please enter name or leave blank')
+    name=input();
+    if name=="":
+        break
+    if name in birthday:
+        print(name+'\'s  '+'birthday is on  '+birthday[name])
+    else:
+        print('hey,we dont have birthday info')
+        print('so,please enter the person\'s bday then')
+        bday=input()
+        birthday[name]=bday
+        print('database is updated..')
